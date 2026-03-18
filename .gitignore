@@ -19,6 +19,7 @@ data/external/
 data/raw/
 data/interim/
 data/processed/
+data/ATOMS/
 *.csv
 *.json
 *.h5
