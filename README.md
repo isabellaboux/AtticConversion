@@ -48,64 +48,26 @@ The DachAusbau project focuses on identifying buildings with potential for rooft
 
 ## 3. Pipeline
 
-1. User enters an addres (or possibly a Cadastral ID).
-
-2. The identifier is converted into the CityGML identifier.
-
-3. Thanks to computer vision, determine if the attic is  (a) NON-CONVERTIBLE (b) CONVERTIBLE (c) CONVERTED ALREADY
-
-    3.1. Get the building perimeter from the CityGLM data
-
-    3.2. Clip orthophoto to extract room image
-
-    3.3. Apply CV on cropped roofs
-
-4. Determine whether the building is an Altbau (seful for structural strength)
-
-    4.1 Extract facade images from Mapillary? (source tbc)
-
-    4.2. Run CV
-
-    or
-
-    4.1 Extract building year (source tbd)
-
-5. Integarte zoning information
-
-    5.1. Is the building protected (Denkmalschutz)?
-
-    5.2. Other quality requirements?
-
-6. feasability judgement
-
-7. Estimate of the gained living space.
-
-
 ```mermaid
 flowchart TD
 
-A["1. User enters address<br/>or cadastral ID"]
+A["1. USER ENTERS STREET ADDRESS OR CADASTRAL ID"]
 
-B["2. Convert identifier to CityGML building ID"]
+B["2. STREET ADDRESS OR CADASTRAL ID CONVERTED TO CITYGLM BUILDING ID"]
 
-C["3. Attic classification via computer vision"]
-C1["3.1 Extract building perimeter<br/>from CityGML"]
-C2["3.2 Clip orthophoto to extract roof image"]
-C3["3.3 Apply CV on cropped roof<br/>Non-convertible | Convertible | Already converted"]
+C["3. ROOF CLASSIFICATION VIA CV\n\n3.1 Extract building perimeter<br/>from CityGML\n3.2 Clip orthophoto to extract roof image\n3.3 Apply CV on cropped roof<br/>Non-convertible | Convertible | Already converted"]
 
-D["4. Determine Altbau status"]
-D1["4.1 Extract facade images<br/>Mapillary - TBD"]
-D2["4.2 Apply CV classification"]
-D3["or"]
-D4["4.1 Extract building year<br/>source TBD"]
+D["4. ALTBAU STATUS CLASSIFICATION\n\n4.1 Extract facade images<br/>Mapillary - TBD"\n4.2 Apply CV classification\n\n or \n\n 4.1 Extract building year<br/>source TBD]
 
-E["5. Integrate zoning and legal data"]
-E1["5.1 Check Denkmalschutz status"]
-E2["5.2 Check other regulations<br/>courtyard, height, etc."]
+E["5. INTERGATION OF LEGAL AND ZONING INFORMTION\n\n5.1 Check Denkmalschutz status\n5.2 Check other regulations<br/>courtyard, height, etc."]
 
-F["6. Feasibility judgement"]
+F["6. FEASABILITY JUDGEMENT"]
 
-G["7. Estimate gained living space"]
+G["no"]
+
+H["yes"]
+
+I["7. ESTIMATION OF OBTAINABLE LIVING SPACE SURFACE"]
 
 A --> B
 
@@ -113,17 +75,13 @@ B --> C
 B --> D
 B --> E
 
-C --> C1 --> C2 --> C3
-D --> D1 --> D2
-D --> D3 --> D4
-E --> E1
-E --> E2
-
 C --> F
 D --> F
 E --> F
 
 F --> G
+F --> H
+H --> I
 ```
 
 ## Miscellaneous
