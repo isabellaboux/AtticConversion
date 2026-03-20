@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:georss="http://www.georss.org/georss" xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+	<title>Digitale farbige TrueOrthophotos Sommer 2025 (DOP20RGBI)</title>
+	<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom/0.atom" rel="self" type="application/atom+xml"/>
+	<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom" rel="up" type="application/atom+xml"/>
+	<link href="https://gdi.berlin.de/geonetwork/srv/ger/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;ID=488857c4-d13f-410e-bf3b-569ca73af5d2&amp;ELEMENTSETNAME=full" rel="describedby" type="text/html"/>
+	<id>https://gdi.berlin.de/data/truedop_2025_sommer/atom/0.atom</id>
+	<rights>Für die Nutzung der Daten ist die Datenlizenz Deutschland - Zero - Version 2.0 anzuwenden. Die Lizenz ist über https://www.govdata.de/dl-de/zero-2-0 abrufbar.</rights>
+	<updated>2025-08-07T11:54:59Z</updated>
+	<author>
+		<name>Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin</name>
+		<email>geoportal@senstadt.berlin.de</email>
+	</author>
+	<entry>
+		<title>Digitale farbige TrueOrthophotos Sommer 2025 (DOP20RGBI) - Download-Service - EPSG:25833 -jp2, gezippt.</title>
+		<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom/Blattschnitt2x2km_2024.gif" rel="alternate" title="Blattschnittübersicht 2x2 Km" type="gif"/>
+		<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom/Mitte.zip" rel="section" title="Mitte (3,13 GB)" type="application/x-jp2"/>
+		<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom/Nord.zip" rel="section" title="Nord (2,7 GB)" type="application/x-jp2"/>
+		<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom/Nordost.zip" rel="section" title="Nordost (120 MB)" type="application/x-jp2"/>
+		<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom/Nordwest.zip" rel="section" title="Nordwest (1,2 GB)" type="application/x-jp2"/>
+		<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom/Ost.zip" rel="section" title="Ost (1,43 GB)" type="application/x-jp2"/>
+		<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom/Süd.zip" rel="section" title="Süd (3,1 GB)" type="application/x-jp2"/>
+		<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom/Südost.zip" rel="section" title="Südost (3,38 GB)" type="application/x-jp2"/>
+		<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom/Südwest.zip" rel="section" title="Südwest (2,16 GB)" type="application/x-jp2"/>
+		<link href="https://gdi.berlin.de/data/truedop_2025_sommer/atom/West.zip" rel="section" title="West (2,17 GB)" type="application/x-jp2"/>
+		<id>https://gdi.berlin.de/data/truedop_2025_sommer/atom/0.atom</id>
+		<rights>Für die Nutzung der Daten ist die Datenlizenz Deutschland - Zero - Version 2.0 anzuwenden. Die Lizenz ist über https://www.govdata.de/dl-de/zero-2-0 abrufbar.</rights>
+		<updated>2025-08-07T11:54:59Z</updated>
+		<category term="http://www.opengis.net/def/crs/EPSG/0/25833" label="EPSG/0/25833"/>
+		<author>
+			<name>Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin</name>
+			<email>geoportal@senstadt.berlin.de</email>
+		</author>
+	</entry>
+</feed>
