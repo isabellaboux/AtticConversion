@@ -1,5 +1,8 @@
 # Attic Conversion Project
 
+> [!NOTE]
+> This project is work in progress.
+
 ## 1. Overview
 The DachAusbau project focuses on identifying buildings with potential for rooftop (attic) conversion using data-driven methods. By leveraging geospatial data, 3D building models, and algorithmic analysis, the project aims to streamline the detection of underutilized roof spaces in urban environments.
 
