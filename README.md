@@ -82,20 +82,22 @@ The DachAusbau project focuses on identifying buildings with potential for rooft
 
 
 ```mermaid
+flowchart TD
+
 A[1. User enters address<br/>or cadastral ID]
 
 B[2. Convert identifier → CityGML building ID]
 
 C[3. Attic classification via Computer Vision]
-C1[3.1 Extract building perimeter<br/>from CityGML]
-C2[3.2 Clip orthophoto → roof image]
-C3[3.3 Apply CV on roof<br/>(Convertible / Non-convertible / Already converted)]
+C1[Extract building perimeter<br/>from CityGML]
+C2[Clip orthophoto → roof image]
+C3[Apply CV on roof<br/>(Non-convertible / Convertible / Already converted)]
 
 D[4. Determine Altbau status]
-D1[4.1 Extract façade images<br/>(e.g. Mapillary - TBD)]
-D2[4.2 Apply CV classification]
+D1[Extract façade images<br/>(Mapillary - TBD)]
+D2[Apply CV classification]
 D3[OR]
-D4[4.1 Extract construction year<br/>(data source TBD)]
+D4[Extract building year<br/>(source TBD)]
 
 E[5. Integrate zoning / legal data]
 E1[5.1 Check Denkmalschutz status]
@@ -124,6 +126,7 @@ E --> F
 
 F --> G
 ```
+
 ## Miscellaneous
 
 - **Dachausbau regulations for Berlin**: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/themen/bauberatungsservice/artikel.1497107.php
