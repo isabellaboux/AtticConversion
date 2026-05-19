@@ -27,7 +27,7 @@ The DachAusbau project focuses on identifying buildings with potential for rooft
 
 - **Description**: *"The dataset contains comprehensive three-dimensional building models of the State of Berlin at Level of Detail 2 (LoD2). The floor plans of the building models correspond exactly to the building boundaries as recorded in the real estate cadastre. The roof shape of a building model corresponds to a generalized standard roof shape."* (translated from https://daten.berlin.de/datensaetze/3d-gebaudemodelle-im-level-of-detail-2-lod-2-3c7c49af, accessed on the 20th March 2026).
 - **Source**: provided by the *Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin* (https://daten.berlin.de/datensaetze/3d-gebaudemodelle-im-level-of-detail-2-lod-2-3c7c49af).
-- **How to access**: clicking on the "Resource link leads to the download of the r9Ul3STr, an ATOM feed. Inside this file there is the link http://inspire.ec.europa.eu/schemas/inspire_dls/1.0, which leads to another file download (0.atom) which also contains a list of further links: one link containing the tiling of the state of Berlin and one link for each of the tiles in a zip file. When a zip file is downloaded, it contains only one .xml file, which can be opened in the KITModelViewer software (https://www.iai.kit.edu/english/1302.php) via *File > Open... > Open GML file*. Onece a tile has been loaded, other ones can be merged into it (*File > Merge*) There, the whole tile becomes visible. Each building is divided in subparts (area, walls, roof) and these are also further difided in sub-elements (polygonds). Each building has a unique identifier: glm:id. Note that also subparts have a comparable identifier!
+- **How to access**: clicking on the "Resource link leads to the download of the r9Ul3STr, an ATOM feed. Inside this file there is the link http://inspire.ec.europa.eu/schemas/inspire_dls/1.0, which leads to another file download (0.atom) which also contains a list of further links: one link containing the tiling of the state of Berlin and one link for each of the tiles in a zip file. When a zip file is downloaded, it contains only one .xml file, which can be opened in the KITModelViewer software (https://www.iai.kit.edu/english/1302.php) via *File > Open... > Open GML file*. Once a tile has been loaded, other ones can be merged into it (*File > Merge*) There, the whole tile becomes visible. Each building is divided in subparts (area, walls, roof) and these are also further difided in sub-elements (polygonds). Each building has a unique identifier: glm:id. Note that also subparts have a comparable identifier!
 - **License**: Für die Nutzung der Daten ist die Datenlizenz Deutschland - Zero - Version 2.0 anzuwenden. Die Lizenz ist über https://www.govdata.de/dl-de/zero-2-0 abrufbar.
 - **Use**: contains information about the geometry of a building including the roof. TThis is useful for:
     - determining feasability: how tall i sthe building, how big is the roof, which geometry the roof has?
@@ -38,12 +38,17 @@ The DachAusbau project focuses on identifying buildings with potential for rooft
 - **Source**: provided by the *Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin* (https://daten.berlin.de/datensaetze/digitale-farbige-trueorthophotos-sommer-2025-truedop20rgbi-687d0f2e).
 - **How to access**: 
 - **License**: Für die Nutzung der Daten ist die Datenlizenz Deutschland - Zero - Version 2.0 anzuwenden. Die Lizenz ist über https://www.govdata.de/dl-de/zero-2-0 abrufbar.
-- **Use**: Required for examining the roof to detrmine if the attic is already converted (e.g. has windows)
+- **Use**: Required for examining the roof to determine if the attic is already converted (e.g. has windows)
 
-### GPS/street data
+### Adress data from berlin Geoportal
+- **Source:**: https://gdi.berlin.de/geonetwork/srv/api/records/47500aa2-b511-4167-8da6-da80e32dfbc9 
+- **How to access:**  From the above link, you can click on *Downloaddienst - Hauskoordinaten als Teildatenbestand Adressen Berlin (ATOM) ( INSPIRE ATOM )*, which will initiat ethe download of the file *3Rz4pl2L*. When opening the file, you click on the link https://gdi.berlin.de/data/adressen_berlin/atom, which in turn will initiate the dowload of the *atom* file. In th e*atom* file, you cna click the link https://gdi.berlin.de/data/adressen_berlin/atom/0.atom which will initiat ethe download of the file *0*. Insode file *0* you can click on href="https://gdi.berlin.de/data/adressen_berlin/atom/HKO_EPSG25833.zip for the data in a zip folder and on href="https://gdi.berlin.de/data/adressen_berlin/atom/Datenformatbeschreibung_HK_DE.pdf for some PDF documentation.
+- **License:** *"Für die Nutzung der Daten ist die Datenlizenz Deutschland - Zero - Version 2.0 anzuwenden. Die Lizenz ist über https://www.govdata.de/dl-de/zero-2-0 abrufbar."* (from https://gdi.berlin.de/geonetwork/srv/api/records/47500aa2-b511-4167-8da6-da80e32dfbc9)
 - **Use**: to link different data sources and entry point for the user
 
 ### Cadastral information? - tbc
+- **Source:** https://gdi.berlin.de/geonetwork/srv/ger/catalog.search#/metadata/0a7c53a5-b29d-3f45-9734-1c811045e6c2
+- **How to access:** From the above link, scroll to *Downloaddienst - ALKIS Berlin Gebäude (WFS)* an dselect the option *gebaude* and the doload option *application/gml+xml; version=3.2* which will initiate download.
 - **Use**: to link different data sources and entry point for the user
 
 ## 3. Pipeline
