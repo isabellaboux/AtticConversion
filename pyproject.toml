@@ -9,4 +9,5 @@ dependencies = [
     "lxml>=6.1.1",
     "matplotlib>=3.10.7",
     "pyproj>=3.7.2",
+    "tqdm>=4.67.1",
 ]
